@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="280dip"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dip"
+        android:background="#BFC3FF">
+
+        <RelativeLayout
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:background="#BFC3FF">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=" Add friends "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="22dip"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/containerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toplayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="#BFC3FF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name :"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:layout_weight="1"
+                        android:textSize="22dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_weight="1"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:hint="name"
+                        android:inputType="textCapWords"
+                        android:textColor="#000000"
+                        android:textColorHint="#c1c1c1"
+                        android:textSize="20dip"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tableRow1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/mailid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E-mail Id :"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:layout_weight="1"
+                        android:textSize="22dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:hint="email id"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:textColorHint="#c1c1c1"
+                        android:textSize="20dip"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tableRow2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Percent :"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:layout_weight="1"
+                        android:textSize="22dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:hint="100%"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:textColorHint="#c1c1c1"
+                        android:textSize="20dip"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tableRow3"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="20dip"
+                        android:background="#242A33"
+                        android:text="  Save  "
+                        android:onClick="save"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff" />
+
+                </TableRow>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
