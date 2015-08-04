@@ -25,6 +25,8 @@ public class CreateNew extends Activity {
     public SQLiteDatabase db;
     DatabaseOperations ob;
     private static int billNumber;
+    //private EditText editText;
+
 
     private boolean isbillCreated;
 
@@ -33,6 +35,7 @@ public class CreateNew extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.createnew);
+        //editText = (EditText) findViewById(R.id.editText);//
         ob  = new DatabaseOperations(CreateNew.this);
         db = ob.getWritableDatabase();
         BillType = (EditText) findViewById(R.id.editText2);
@@ -146,8 +149,16 @@ public class CreateNew extends Activity {
         startActivity(Intent.createChooser(email, "Choose an Email client :"));
     }
 
+    public void friendsDetail(View view) {
+        Intent intent = new Intent(this,Friends.class);
+      //  String message = editText.getText().toString();
+        //intent.putExtra("Friend id", message);
+        startActivity(intent);
+    }
     public void SendMail(View view) {
     }
+
+
 }
 
 

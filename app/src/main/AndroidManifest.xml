@@ -24,6 +24,10 @@
             android:name=".History"
             android:label="@string/title_activity_history" >
         </activity>
+        <activity
+            android:name=".Friends"
+            android:label="@string/title_activity_friends" >
+        </activity>
     </application>
 
 </manifest>
