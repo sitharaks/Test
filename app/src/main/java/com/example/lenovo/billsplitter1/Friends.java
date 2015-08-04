@@ -28,7 +28,7 @@ public class Friends extends Activity {
     public SQLiteDatabase db;
     DatabaseOperations ob;
 
-
+//uy8rr
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
