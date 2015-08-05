@@ -31,6 +31,7 @@ public class AddFriends extends Activity {
         Email = (EditText) findViewById(R.id.date);
         Percent = (EditText) findViewById(R.id.amount);
     }
+    //////seeee here
 
     public void save(View v) {
         String fname = Name.getText().toString();
