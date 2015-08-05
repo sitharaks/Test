@@ -31,6 +31,7 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 
     //Every time getcount from collection
     //number of friends is already here can u show sqlite sample code
+    //ghgff
 
     public static String[] allBillColumns = {
             BILL_NUMBER,
