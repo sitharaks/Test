@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.Date;
-
+///changes hear
 
 public class AddFriends extends Activity {
     private EditText Name, Email, Percent;
